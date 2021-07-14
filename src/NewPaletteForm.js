@@ -11,6 +11,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
+import DraggableColorBox from "./DraggableColorBox";
 
 //this picker will work only if we install 2.17.3 version of react-color rather than the latest 
 //so while installing do-- npm i react-color@2.17.3
@@ -59,6 +60,7 @@ const styles = theme => ({
     },
     content: {
         flexGrow: 1,
+        height: "calc(100vh - 64px)",   //so that we can have our height of draggable color boxes as 25% as desired (here 64px is height of app bar)
         padding: theme.spacing(1) * 3,
         transition: theme.transitions.create("margin", {
             easing: theme.transitions.easing.sharp,
@@ -177,11 +179,9 @@ class NewPaletteForm extends Component {
                 >
                     <div className={classes.drawerHeader} />
 
-                    <ul>
-                        {this.state.colors.map(color => (
-                            <li style={{ backgroundColor: color }}>{color}</li>
-                        ))}
-                    </ul>
+                    {this.state.colors.map(color => (
+                        <DraggableColorBox color={color} />
+                    ))}
                 </main>
             </div>
         );
