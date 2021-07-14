@@ -39,7 +39,7 @@ class SingleColorPalette extends Component {
                 key={color.name}        //changed as warning : two children with same key
                 name={color.name}
                 background={color[format]}
-                showLink={false}
+                showingFullPalette={false}
             />
         ));
 
