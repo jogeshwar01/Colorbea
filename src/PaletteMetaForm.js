@@ -61,7 +61,8 @@ class PaletteMetaForm extends Component {
             <div>
                 <Dialog
                     open={this.state.stage === "emoji"}
-                    onClose={hideForm}>             //so that even if we click away rather than on cancel button,the form goes away
+                    onClose={hideForm}>
+                    {/* so that even if we click away rather than on cancel button,the form goes away */}
 
                     <DialogTitle id='form-dialog-title'>
                         Choose a Palette Emoji
