@@ -3,10 +3,8 @@ const drawerWidth = DRAWER_WIDTH;
 
 const styles = theme => ({
     root: {
-        display: "flex"
-    },
-    hide: {
-        display: "none"
+        display: "flex",
+        overflow: "hidden"  //i added this to remove scrollbar
     },
     drawer: {
         width: drawerWidth,
@@ -21,6 +19,7 @@ const styles = theme => ({
     drawerHeader: {
         display: "flex",
         alignItems: "center",
+        width: "100%",
         padding: "0 8px",
         ...theme.mixins.toolbar,
         justifyContent: "flex-end"
@@ -28,7 +27,7 @@ const styles = theme => ({
     content: {
         flexGrow: 1,
         height: "calc(100vh - 64px)",   //so that we can have our height of draggable color boxes as 25% as desired (here 64px is height of app bar)
-        padding: theme.spacing(1) * 3,
+        padding: 0,
         transition: theme.transitions.create("margin", {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen
