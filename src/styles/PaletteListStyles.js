@@ -6,7 +6,7 @@ export default {
         ".fade-exit": {
             opacity: 1
         },
-        ".fade-exit-active": {
+        ".fade-exit-active": {      //added after 500ms ie the timeout specified
             opacity: 0,
             transition: "opacity 500ms ease-out"
         }
