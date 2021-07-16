@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Colorbea/static/css/main.add56613.chunk.css",
+    "main.js": "/Colorbea/static/js/main.37a82e1c.chunk.js",
+    "main.js.map": "/Colorbea/static/js/main.37a82e1c.chunk.js.map",
+    "runtime-main.js": "/Colorbea/static/js/runtime-main.bf3b10d4.js",
+    "runtime-main.js.map": "/Colorbea/static/js/runtime-main.bf3b10d4.js.map",
+    "static/css/2.8dec86d5.chunk.css": "/Colorbea/static/css/2.8dec86d5.chunk.css",
+    "static/js/2.30459357.chunk.js": "/Colorbea/static/js/2.30459357.chunk.js",
+    "static/js/2.30459357.chunk.js.map": "/Colorbea/static/js/2.30459357.chunk.js.map",
+    "static/js/3.440609da.chunk.js": "/Colorbea/static/js/3.440609da.chunk.js",
+    "static/js/3.440609da.chunk.js.map": "/Colorbea/static/js/3.440609da.chunk.js.map",
+    "index.html": "/Colorbea/index.html",
+    "static/css/2.8dec86d5.chunk.css.map": "/Colorbea/static/css/2.8dec86d5.chunk.css.map",
+    "static/css/main.add56613.chunk.css.map": "/Colorbea/static/css/main.add56613.chunk.css.map",
+    "static/js/2.30459357.chunk.js.LICENSE.txt": "/Colorbea/static/js/2.30459357.chunk.js.LICENSE.txt",
+    "static/media/bg.6825fe97.svg": "/Colorbea/static/media/bg.6825fe97.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf3b10d4.js",
+    "static/css/2.8dec86d5.chunk.css",
+    "static/js/2.30459357.chunk.js",
+    "static/css/main.add56613.chunk.css",
+    "static/js/main.37a82e1c.chunk.js"
+  ]
+}
