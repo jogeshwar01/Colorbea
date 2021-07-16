@@ -43,6 +43,7 @@ class PaletteMetaForm extends Component {
             emoji: emoji.native
         };
         this.props.handleSubmit(newPalette);
+        this.setState({ stage: "" });   //so that emoji picker closes as soon as it is picked rather than take time due to fade transition
     }
 
     handleClickOpen = () => {
