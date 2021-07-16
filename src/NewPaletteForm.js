@@ -14,6 +14,7 @@ import DraggableColorList from "./DraggableColorList";
 import { arrayMove } from "react-sortable-hoc";
 
 import styles from "./styles/NewPaletteFormStyles";
+import seedColors from "./seedColors";
 
 
 class NewPaletteForm extends Component {
@@ -25,7 +26,7 @@ class NewPaletteForm extends Component {
         super(props);
         this.state = {
             open: true,             //initially drawer open
-            colors: this.props.palettes[0].colors
+            colors: seedColors[0].colors    //so that we dont have to rely on palettes for the initial palette in the form (as palettes array may be empty if all are deleted)
         };
 
         this.addNewColor = this.addNewColor.bind(this);
