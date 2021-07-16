@@ -28,6 +28,7 @@ class PaletteList extends Component {
         this.openDialog = this.openDialog.bind(this);
         this.closeDialog = this.closeDialog.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
+        this.goToPalette = this.goToPalette.bind(this);
     }
 
     openDialog(id) {
@@ -63,7 +64,8 @@ class PaletteList extends Component {
                             <CSSTransition key={palette.id} classNames='fade' timeout={500}>
                                 <MiniPalette
                                     {...palette}
-                                    handleClick={() => this.goToPalette(palette.id)}
+                                    goToPalette={this.goToPalette}
+                                    // this had to be changed so that props dont change and purecompoent can do its work properly coz arrow function in render makes the function again every single render
                                     // handleDelete={deletePalette}
                                     openDialog={this.openDialog}
                                     key={palette.id}
@@ -83,7 +85,8 @@ class PaletteList extends Component {
                         Delete This Palette?
                     </DialogTitle>
                     <List>
-                        <ListItem button onClick={this.handleDelete}>       //here the button means to change style on hover to show its a button
+                        <ListItem button onClick={this.handleDelete}>
+                            {/* here the button means to change style on hover to show its a button     */}
                             <ListItemAvatar>
                                 <Avatar
                                     style={{ backgroundColor: blue[100], color: blue[600] }}
