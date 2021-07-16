@@ -3,7 +3,7 @@
 </div>
 
 <div>
-  <h1>Colorbea [:rainbow:]</h1>
+  <h1>Colorbea :rainbow:</h1>
 </div>
 
 A clone of websites like Flat UI Colors and Material UI Colors.
