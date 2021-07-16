@@ -55,13 +55,13 @@ class PaletteMetaForm extends Component {
     };
 
     render() {
-        const { newPaletteName } = this.state;
-        const { hideForm, handleSubmit } = this.props;
+        const { newPaletteName, stage } = this.state;
+        const { hideForm } = this.props;
 
         return (
             <div>
                 <Dialog
-                    open={this.state.stage === "emoji"}
+                    open={stage === "emoji"}
                     onClose={hideForm}>
                     {/* so that even if we click away rather than on cancel button,the form goes away */}
 
@@ -74,7 +74,7 @@ class PaletteMetaForm extends Component {
                 </Dialog>
 
                 <Dialog
-                    open={this.state.stage === "form"}
+                    open={stage === "form"}
                     aria-labelledby='form-dialog-title'
                     onClose={hideForm}
                 >

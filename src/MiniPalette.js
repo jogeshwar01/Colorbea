@@ -21,8 +21,7 @@ class MiniPalette extends PureComponent {   //PureComponent-to stop re-rendering
     }
 
     render() {
-        const { classes, paletteName, emoji, colors, handleClick, id } = this.props;
-        console.log("RENDERING: ", paletteName);
+        const { classes, paletteName, emoji, colors } = this.props;
 
         const miniColorBoxes = colors.map(color => (
             <div
