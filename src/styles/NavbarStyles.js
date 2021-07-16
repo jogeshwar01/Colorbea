@@ -44,7 +44,8 @@ export default {
             marginLeft: "-7px",
             marginTop: "-3px"
         },
-        [sizes.down("md")]: {
+        [sizes.down("sm")]: {
+            // changed to sm so that slider size decreases a little bit later
             width: "150px"
         }
     },
